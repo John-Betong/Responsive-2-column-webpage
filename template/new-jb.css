@@ -1,0 +1,134 @@
+/* CSS FILE FROM THEFORENSICNURSE.ORG/newsite3 */
+
+/* null margins and padding to give good cross-browser baseline */
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,dl,dt,dd,
+table,tr,td,th,p,img {
+margin:0;
+padding:0;
+}
+
+img, fieldset {
+border:none;
+}
+
+* {
+box-sizing:border-box;
+}
+
+/*
+media (max-width:480px) {
+*/
+
+@media only screen and (max-width: 480px) 	
+{
+  /* Fix for pre "viewport <meta>" mobile browsers */
+  * {	
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  }
+}
+
+
+html, body a {
+height:100%;
+}
+
+button,
+label {
+cursor: pointer;
+}
+
+body, button, input, table, textarea, select {
+font:normal 1em/1.5 arial,helvetica,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+}
+
+body {
+font: 15px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif;
+color: #000000;
+font-weight: 300;
+font-style: normal;
+-webkit-font-smoothing: antialiased;
+/* Fix for webkit rendering */
+-webkit-text-size-adjust: 100%;
+background:#FAD2F3 ;
+}
+
+#top {
+max-width:76em; /* was 64em */
+margin:0.65em auto; /* was 0em - 0.33em is the space between the top of the viewport & the header, auto is centering of header image */
+padding:0 0em; /* 0 1em - padding around the bottom of header image removed */
+border:1px solid black;
+}
+
+header {
+/* height:245px; */
+background:#A7A4CA;
+}
+
+nav {
+position:relative;
+/* height:50px; */
+background:#F9809A;
+text-align: center;
+}
+
+#top > footer {
+background-color: #410036;
+color:#FFF;
+}
+
+main {
+display:block; /* IE fix */
+padding:0.63em 0em; /* 1em 1em 0.5em - padding between the image/text and the edge of the content box */
+}
+
+section {
+position:relative;    
+float:left;
+width:50em;
+background-color:#B5B0F9;
+color:black;
+}
+
+aside {
+background:white;
+}
+
+@media (max-width:76em) {
+  #top {
+    padding:0;
+  }
+}  
+
+@media (max-width:60em) {
+  main {
+    width:100%;
+ }
+  section {
+    width:100%;
+    margin:auto;
+  }
+  aside {
+    width:100%;
+    margin:auto;
+  }
+}
+
+@media (max-width:40em) {
+  main {
+    padding:1em 0.5em 0.5em;
+  }
+}
+
+@media (max-width:26em) {
+  #mainMenu li {
+    width:100%;
+  }
+}
