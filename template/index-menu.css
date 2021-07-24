@@ -1,0 +1,81 @@
+/* null margins and padding to give good cross-browser baseline */
+html,
+body {
+  font: 16px/1.42 BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f8f8; color: #333;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+} 
+h1, h2 {
+	margin:0; padding:0;
+}
+header {
+	background-color: #ddd; color: #333;
+	border-bottom: solid 1px #ccc;
+}
+header a {
+	float: right;
+}
+
+#outer {
+	text-align: center;
+}
+main {
+	display: inline-block;
+	margin: 0.88em auto;
+	padding: 0.88em;
+}
+main h2 {
+	background-color:#dfd;
+	margin: 0 0 0.88em;
+	border-radius: 0.88em;
+}
+
+main #extra, 
+main section {
+	margin-bottom: 2em;
+	border: solid 1px #ccc;
+	border-radius: 0.88em;
+	text-align: left;
+	float: left;
+	background-color: #efe;
+}
+main section {
+  margin-right: 2em;
+  width: 60%; 
+  max-width: 55em; min-width: 25em;
+  background-color: #efe;
+}
+main section p {
+  width: 88%; max-width: 42em;
+  margin: 0 auto 0.88em;
+  text-align: left;
+  background-color: #efe;
+}
+.more {
+  float: right;
+  font-size: large;
+  text-decoration: none;
+  margin: 1em 0 0 0;
+}
+main #extra {
+	width: 28%; max-width: 25em;
+}
+main #extra ul li {
+	margin: 0 1em 1em 0;
+	line-height: 1.88;
+	font-size: small;
+}
+
+nav {
+	text-align: center;
+}
+nav ul li {
+	margin: 0 0.88em;	padding: 0.12em 0.42em;
+	border-radius: 0.88em;
+	display: inline-block;
+	background-color: #eee; color: #333;
+}
+nav ul li:hover {
+	background-color: #ddd; color: #fff;
+}
