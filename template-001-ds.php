@@ -73,6 +73,7 @@ Body
 
 </div>
 
+<?php require '/var/www/footer.php'; ?>
 
 </body>
 </html>

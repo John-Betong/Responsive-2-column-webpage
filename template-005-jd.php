@@ -209,4 +209,6 @@
 
 <script src="scripts/library.js"></script>
 
+<?php require '/var/www/footer.php'; ?>
+
 </body></html>

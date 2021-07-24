@@ -9,11 +9,17 @@ $forum 	= 'https://www.codingforum.net/forum/client-side-development/general-web
 # LINKS
 	$fffs 	= glob('*.php');
 	$links 	= '';
+	$vLinks	= '';
 		foreach($fffs as $key => $link) :
 			if($key) : # OMIT index-menu.php
 				$links .= <<< ____EOT
 					<li>
 						<a href="$link"> $link </a>
+					</li>
+____EOT;
+				$vLinks	.= <<< ____EOT
+					<li>
+						<a href="$link?vvv"> $link?vvv </a>
 					</li>
 ____EOT;
 			endif;
@@ -30,8 +36,9 @@ foreach($navs as $key => $nav) :
 	$navItems .= "<li> <a href='$nav'> $key </a> </li>";
 endforeach; 
 
-?><!DOCTYPE HTML><html lang="en"><head><meta charset="UTF-8" />
+?><!DOCTYPE HTML><html lang="en-GB">
 <head>
+<meta charset="UTF-8" />
 <meta
 	name="viewport"
 	content="width=device-width,height=device-height,initial-scale=1"
@@ -69,26 +76,37 @@ endforeach;
 			</p><p>
 				I have created a new folder (so that the above folder and page still apply to posts that mention it) here: http://62.171.149.227/newsite4/index4.html to continue learning.
 			</p><p>
-				I did this because the first link has the element heights (two &lt;div&gt;> elements) fixed at 30em. It works very nicely.... until the content of the first section becomes larger than the container, at 30em, can handle. So I was looking for a solution where both elements (that are side by side on the page) grew depending on the content on the first 
+				I did this because the first link has the element heights (two &lt;div&gt;> elements) fixed at 30em. It works very nicely.... until the content of the first section becomes larger than the container, at 30em, can handle. So I was looking for a solution where both elements (that are side by side on the page) grew depending on the content on the first...
 			<a class="more" href="<?= $forum ?>"> ...more </a>
+			</p><p>
+				@judgedredd
 		</p>
 		</section>
 		
-		<div id="extra">	
+		<div class="extra">	
 			<h2> 
 				<b> Menu </b> 
 			</h2>
-
 			<ul> 
 				<?= $links ?>
 			</ul>	
-		</div><!-- id=extra -->
-
+		</div>	
+		<div class="extra">	
+			<h2> Validation Links </h2>
+			<ul> 
+				<?= $vLinks ?>
+			</ul>	
+		</div><!-- class=extra -->
 	</main>
+
+	<div id="src">
+		<h3> Source: </h3>
+		<?= highlight_file(__file__, TRUE); ?>
+	</div>
 
 </div><!-- id="outer" -->
 
 <?php require '/var/www/footer.php'; ?>
 
 </body>
-</head>
+</html>
