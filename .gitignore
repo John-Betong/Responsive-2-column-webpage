@@ -1,2 +1,3 @@
 GIT-IGNORED.php
-public_html
+public_html 
+!NON-EXISTENT-FILE.php
