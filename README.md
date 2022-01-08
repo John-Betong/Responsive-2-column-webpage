@@ -1,7 +1,9 @@
 <h1> Responsive two column web-page </h1>
 
 <h2> 
-	<a href="https://this-is-a-test-to-see-if-it-works.tk/codingforum/JD-Responsive-2-column-webpage/"> Online Demo </a>
+  <a href="https://this-is-a-test-to-see-if-it-works.anetizer.com/codingforum/JD-Responsive-2-column-webpage/"> 
+    Online Demo 
+  </a>
 </h2>
 
 <p>
